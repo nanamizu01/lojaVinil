@@ -1,0 +1,33 @@
+
+<nav class="container-cabecalho">
+    <div class="logo">
+        <a routerLink=""><img class="logo_imagem" src="../assets/img/RecordsLogo.png" alt="Imagem da Logo da Loja"></a>
+    </div>
+
+    <div class="searchbar">
+        <form class="container-fluid" role="search">
+            <div class="input-group">
+                <input class="input-group-text" type="search" placeholder="O que você está procurando?">
+                <span class="form-control" type="button"><i class="bi bi-search"></i></span>
+            </div>
+        </form>
+    </div>
+        
+    <div class="navbar">
+        <ul>
+            <li class="navbar_item">
+                <a routerLink="/minha-conta/meu-carrinho"><i class="bi bi-cart2"></i></a>
+            </li>
+            <li class="navbar_item">
+                <a routerLink="/minha-conta"><i class="bi bi-person"></i></a>
+            </li>
+            <li class="navbar_item">
+                <a routerLink="/login"><i class="bi bi-box-arrow-in-right"></i></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <router-outlet></router-outlet>
+</div>

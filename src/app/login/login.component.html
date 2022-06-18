@@ -1,0 +1,29 @@
+<div class="container-login">
+    <h4 class="titulo titulo_login">Login</h4>
+
+    <form [formGroup]="form_login" (ngSubmit)="onSubmit()">
+
+        <div class="form-group">
+            <div class="input-group">
+                <span class="input-group-text">E-mail</span>
+                <input type="email" placeholder="usuario@email.com" class="form-control"
+                    formControlName="email" [ngClass]="aplicaCssErro('email')">
+            </div>
+    
+            <div class="input-group">
+                <span class="input-group-text">Senha</span>
+                <input type="password" placeholder="Senha" class="form-control"
+                    formControlName="senha" [ngClass]="aplicaCssErro('senha')">
+            </div>
+    
+            <div class="btn_login">
+                <button id="btn_login" type="submit" class="btn btn-primary" [disabled]="!form_login.valid">Entrar</button>
+            </div>
+        </div>
+
+        <app-form-debug [form]="form_login"></app-form-debug>
+        
+    </form>
+
+    <a class="link link_cadastro" routerLink="/cadastro">Ainda não é cadastrado? Clique aqui.</a>
+</div>

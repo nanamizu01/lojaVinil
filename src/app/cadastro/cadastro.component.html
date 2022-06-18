@@ -1,0 +1,60 @@
+<div class="container-cadastro">
+    <h4 class="titulo titulo_cadastro">Informe seus dados para cadastro:</h4>
+
+    <form [formGroup]="form_cadastro" (ngSubmit)="onSubmit()">
+
+        <div class="form-group">
+
+            <div class="input-group" id="input_nome_sobrenome">
+                <span class="input-group-text">Nome e Sobrenome</span>
+                <input type="text" placeholder="Nome" class="form-control"
+                    formControlName="nome" [ngClass]="aplicaCssErro('nome')">
+
+                <input type="text" placeholder="Sobrenome" class="form-control"
+                    formControlName="sobrenome" [ngClass]="aplicaCssErro('sobrenome')">
+                
+            </div>
+            
+    
+            <div class="data_email">
+    
+                <div class="input-group" id="input_data_nasc">
+                    <span class="input-group-text">Data de Nascimento</span>
+                    <input type="date" class="form-control"
+                        formControlName="data_nasc" [ngClass]="aplicaCssErro('data_nasc')">
+                </div>
+    
+                <div class="input-group" id="input_email">
+                    <span class="input-group-text">E-mail</span>
+                    <input type="email" placeholder="usuario@email.com" class="form-control"
+                        formControlName="email" [ngClass]="aplicaCssErro('email')">
+                </div>
+            </div>
+            
+            <div class="senha">
+    
+                <div class="input-group" id="input_senha">
+                    <span class="input-group-text">Senha</span>
+                    <input type="password" placeholder="Senha" class="form-control"
+                        formControlName="senha" [ngClass]="aplicaCssErro('senha')">
+                </div>
+    
+                <div class="input-group" id="input_confirmar_senha">
+                    <span class="input-group-text">Confirmar senha</span>
+                    <input type="password" placeholder="Confirmar senha" class="form-control"
+                        formControlName="confirmar_senha" [ngClass]="aplicaCssErro('confirmar_senha')">
+                </div>
+            </div>
+                    
+            <div class="btn_cadastrar">
+                
+                <button id="btn_cadastrar" type="submit" class="btn btn-primary" (click)="onSubmit()">Cadastrar</button>
+            </div>
+        </div>
+        
+        <app-form-debug [form]="form_cadastro"></app-form-debug>
+
+    </form>
+
+    <a class="link link_login" routerLink="/login">Já tem uma conta? Clique aqui.</a>
+</div>

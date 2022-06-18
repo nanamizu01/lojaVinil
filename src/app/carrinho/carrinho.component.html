@@ -1,0 +1,50 @@
+<div class="container-carrinho">
+    <h4 class="titulo titulo_carrinho">Meu Carrinho</h4>
+    <hr>
+
+    <!--
+    <div class="lista_produtos_carrinho">        
+        <ul>
+            <li class="lista_produtos_item">
+                <div class="produto_info_carrinho">
+                    <img src="https://picsum.photos/100/100" alt="">
+                    <a>Nome do Produto</a>
+                    <p>Quantidade</p>
+                    <p>Preço total</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    !-->
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Imagem</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Qtd</th>
+                <th scope="col">Valor</th>
+            </tr>
+        </thead>
+        <tbody class="align-middle">
+            <tr class="linha_produto_carrinho">
+                <th scope="row">1</th>
+                <td class="col-md-2">
+                    <img src="https://picsum.photos/100/100" alt="">
+                </td>
+                <td>Nome do Produto</td>
+                <td class="col-md-2">
+                    <div class="input-group" id="div_qtd_button">
+                        <span class="input-group-text"><i class="bi bi-dash-lg"></i></span>
+                        <input type="number" class="form-control" placeholder="1" id="qtd_produto" min="0" max="100">
+                        <span class="input-group-text"><i class="bi bi-plus-lg"></i></span>
+                    </div>
+                </td>
+                <td>valor</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <app-compra></app-compra>
+</div>

@@ -1,0 +1,281 @@
+/*https://coolors.co/e7ca9d-dea27c-c54c44-95aab2-407fa0*/
+
+
+body {
+    background-image: url(./assets/img/wppalbums-quente.png);
+}
+
+hr {
+    color: #407fa0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container-cabecalho {
+    background: #e7ca9d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15pt;
+    border-bottom-left-radius: 5pt;
+    border-bottom-right-radius: 5pt;
+    box-shadow: 10pt 5pt 50pt #2d2828a6;
+}
+
+.logo {
+    margin-left: 5pt;
+}
+ 
+.logo_imagem {
+    max-width: 200pt;
+}
+
+.searchbar_item {
+    border-color: white;
+}
+
+.searchbar input {
+    padding: 5pt;
+    border-bottom-left-radius: 5pt;
+    border-top-left-radius: 5pt;
+    width: 500pt;
+}
+
+.searchbar span {
+    padding: 8.5pt;
+    border-bottom-right-radius: 5pt;
+    border-top-right-radius: 5pt;
+    background-color: #95aab2;
+}
+
+.searchbar span i {
+    color: white;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+.navbar {
+    margin-right: 5pt;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar ul li {
+    padding: 5pt;
+}
+
+.navbar_item a i{
+    font-size: 25pt;
+}
+
+.bi {
+    color: white;
+    
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.container-cadastro, .container-login, .container-perfil {
+    margin: 20pt;
+    padding: 30pt;
+    width: fit-content;
+    border-radius: 10pt;
+    box-shadow: 10pt 5pt 50pt #2d2828a6;
+    background: #fbfbfb;
+}
+
+.container-perfil {
+    width: 600pt;
+}
+
+.titulo {
+    color:#407fa0;
+    display: flex;
+    justify-content: center;
+}
+
+.form-group {
+    margin: 10pt;
+    margin-top: 20pt;
+}
+
+.input-group {
+    margin-bottom: 10pt;
+}
+
+#input_nome_sobrenome {
+    width: 600pt;
+}
+
+.data_email {
+    display: flex;
+    max-width: 600pt;
+    justify-content: space-between;
+}
+
+#input_data_nasc {
+    width: 250pt;
+}
+
+#input_email {
+    width: 320pt;
+}
+
+.senha {
+    display: flex;
+    max-width: 700pt;
+    justify-content:flex-start;
+}
+
+#input_senha {
+    width: 200pt;
+    margin-right: 20pt;
+}
+
+#input_confirmar_senha {
+    width: 260pt;
+}
+
+.input-group span {
+    background-color: #95aab2;
+    border-color: #95aab2;
+    color: white;
+    font-weight: 40pt;
+}
+
+.btn_cadastrar, .btn_login {
+    display: flex;
+    justify-content: center;
+}
+
+.btn_cadastrar button, .btn_login button, #btn_atualizar, #btn_comprar {
+    background-color: #407fa0; 
+    border-color: #407fa0;
+    margin-top: 10pt;
+    width: 100pt;
+}
+
+.btn_login button:disabled {
+    background-color: #95aab2;
+    border-color: #95aab2;
+}
+
+.btn_cadastrar button:hover, .btn_login button:hover, #btn_atualizar:hover, #btn_comprar:hover {
+    background-color: #175a7f;
+    border-color: #175a7f;
+}
+
+.att_senha .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.att_senha .form-group input {
+    margin-bottom: 10pt;
+    width: 200pt;
+}
+
+.link {
+    color:#407fa0;
+    display: flex;
+    justify-content: center;
+}
+
+.link:hover {
+    color:#175a7f;
+}
+
+.container-catalogo {
+    background: #fbfbfb;
+    width: 80vw;
+    min-height: 80vh;
+    height: fit-content;
+    padding: 20pt;
+}
+
+.produto {
+    margin: 20pt;
+    width: 220pt;
+    height: 250pt;
+    padding: 15pt;
+    border-radius: 10pt;
+    box-shadow: 2pt 2pt 2pt #2d28282f;
+    background: #fbfbfb;
+    position: relative;
+}
+
+.produto_imagem {
+    display: flex;
+    justify-content: center;
+    width: 160pt;
+    height: 120pt;
+}
+
+.produto_imagem img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.produto_info {
+    padding: 5pt;
+}
+
+.produto_desc {
+    width: 200pt;
+}
+
+.produto_preco {
+    width: 50%;
+    font-size: 20pt;
+}
+
+.bi-cart-plus {
+    background-color: #95aab2;
+    border-radius: 100%;
+    padding: 5pt;
+    padding-left: 7pt;
+    padding-right: 7pt;
+}
+
+.produto_carrinho {
+    position: absolute;
+    top: 12pt;
+    right: 12pt;
+}
+
+.produto_carrinho a i {
+    font-size: 20pt;
+}
+
+.container-carrinho {
+    background: #fbfbfb;
+    width: 950pt;
+    min-height: 450pt;
+    height: fit-content;
+    padding: 20pt;
+    display: flex;
+    flex-direction: column;
+}
+
+#div_qtd_button {
+    width: 100pt;
+}
+
+#qtd_produto::-webkit-inner-spin-button, 
+#qtd_produto::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.compra {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}

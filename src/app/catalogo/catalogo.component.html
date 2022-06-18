@@ -1,0 +1,154 @@
+<div class="container-catalogo">
+
+    <h4 class="titulo titulo_cd">CDs</h4>
+    <hr>
+
+    <div *ngFor="let produtoCD of produtosCD$ | async; let i = index">
+
+        <div *ngIf="i % 3 == 0" class="row row-cols-3">
+
+            <div class="col">
+                <div class="produto">
+
+                    <div class="produto_imagem">
+                        <img src="{{ produtoCD.imgProduto.url }}" alt="Imagem do Produto">
+                    </div>
+            
+                    <div class="produto_info">
+                        <a>
+                            <h5 class="produto_nome">{{ produtoCD.nomeProduto }}</h5>
+                        </a>
+                        <p class="produto_desc">{{ produtoCD.descProduto }}</p>
+                        <p class="produto_preco">R$ {{ produtoCD.precoProduto }}</p>
+                    </div>
+                    
+                    <div class="produto_carrinho">
+                        <a><i class="bi bi-cart-plus" (click)="onClickCarrinho()"></i></a>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="col" *ngIf="i + 1 < produtosCD.length">
+                <div class="produto">
+                    <div class="produto_imagem">
+                        <img src="{{ produtosCD[i + 1].imgProduto.url }}" alt="Imagem do Produto">
+                    </div>
+            
+                    <div class="produto_info">
+                        <a>
+                            <h5 class="produto_nome">{{ produtosCD[i + 1].nomeProduto }}</h5>
+                        </a>
+                        <p class="produto_desc">{{ produtosCD[i + 1].descProduto }}</p>
+                        <p class="produto_preco">R$ {{ produtosCD[i + 1].precoProduto }}</p>
+                    </div>
+                    
+                    <div class="produto_carrinho">
+                        <a><i class="bi bi-cart-plus" (click)="onClickCarrinho()"></i></a>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="col" *ngIf="i + 2 < produtosCD.length">
+                <div class="produto">
+
+                    <div class="produto_imagem">
+                        <img src="{{ produtosCD[i + 2].imgProduto.url }}" alt="Imagem do Produto">
+                    </div>
+            
+                    <div class="produto_info">
+                        <a>
+                            <h5 class="produto_nome">{{ produtosCD[i + 2].nomeProduto }}</h5>
+                        </a>
+                        <p class="produto_desc">{{ produtosCD[i + 2].descProduto }}</p>
+                        <p class="produto_preco">R$ {{ produtosCD[i + 2].precoProduto }}</p>
+                    </div>
+                    
+                    <div class="produto_carrinho">
+                        <a><i class="bi bi-cart-plus" (click)="onClickCarrinho()"></i></a>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <hr>
+    <h4 class="titulo titulo_vinil">Discos de Vinil</h4>
+    <hr>
+
+    <div *ngFor="let produtoVinil of produtosVinil$ | async; let i = index">
+
+        <div *ngIf="i % 3 == 0" class="row row-cols-3">
+
+            <div class="col">
+                <div class="produto">
+
+                    <div class="produto_imagem">
+                        <img src="{{ produtoVinil.imgProduto.url }}" alt="Imagem do Produto">
+                    </div>
+            
+                    <div class="produto_info">
+                        <a>
+                            <h5 class="produto_nome">{{ produtoVinil.nomeProduto }}</h5>
+                        </a>
+                        <p class="produto_desc">{{ produtoVinil.descProduto }}</p>
+                        <p class="produto_preco">R$ {{ produtoVinil.precoProduto }}</p>
+                    </div>
+                    
+                    <div class="produto_carrinho">
+                        <a><i class="bi bi-cart-plus" (click)="onClickCarrinho()"></i></a>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="col" *ngIf="i + 1 < produtosVinil.length">
+                <div class="produto">
+                    <div class="produto_imagem">
+                        <img src="{{ produtosVinil[i + 1].imgProduto.url }}" alt="Imagem do Produto">
+                    </div>
+            
+                    <div class="produto_info">
+                        <a>
+                            <h5 class="produto_nome">{{ produtosVinil[i + 1].nomeProduto }}</h5>
+                        </a>
+                        <p class="produto_desc">{{ produtosVinil[i + 1].descProduto }}</p>
+                        <p class="produto_preco">R$ {{ produtosVinil[i + 1].precoProduto }}</p>
+                    </div>
+                    
+                    <div class="produto_carrinho">
+                        <a><i class="bi bi-cart-plus" (click)="onClickCarrinho()"></i></a>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="col" *ngIf="i + 2 < produtosVinil.length">
+                <div class="produto">
+
+                    <div class="produto_imagem">
+                        <img src="{{ produtosVinil[i + 2].imgProduto.url }}" alt="Imagem do Produto">
+                    </div>
+            
+                    <div class="produto_info">
+                        <a>
+                            <h5 class="produto_nome">{{ produtosVinil[i + 2].nomeProduto }}</h5>
+                        </a>
+                        <p class="produto_desc">{{ produtosVinil[i + 2].descProduto }}</p>
+                        <p class="produto_preco">R$ {{ produtosVinil[i + 2].precoProduto }}</p>
+                    </div>
+                    
+                    <div class="produto_carrinho">
+                        <a><i class="bi bi-cart-plus" (click)="onClickCarrinho()"></i></a>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>

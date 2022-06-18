@@ -1,0 +1,94 @@
+{
+    "usuarios": [
+        {
+            "idUsuario": 1,
+            "nomeUsuario": "fulano",
+            "sobrenomeUsuario": "da silva",
+            "dataNascUsuario": "02-02-2003",
+            "emailUsuario": "fulanosilva@email.com",
+            "senhaUsuario": "senha1234"
+        }
+    ],
+
+    "produtosCD": [
+        {
+            "idProduto": 1,
+            "nomeProduto": "CD Doja Cat - Hot Pink",
+            "descProduto": "cd da cantora Doja Cat",
+            "precoProduto": 53.90,
+            "imgProduto": {
+                "url": "https://m.media-amazon.com/images/I/714Bf2VyuOL._AC_SX466_.jpg"
+            },
+            "tipoProduto": "cd"
+                
+        },
+
+        {
+            "idProduto": 3,
+            "nomeProduto": "CD Supercombo - Rogério",
+            "descProduto": "cd da banda SuperCombo",
+            "precoProduto": 40.89,
+            "imgProduto": {
+                "url": "https://i.scdn.co/image/ab67616d0000b273efc2472ca1db26dd75bc792c"
+            },
+            "tipoProduto": "cd"
+        },
+
+        {
+            "idProduto": 4,
+            "nomeProduto": "CD Ariana Grande - Positions",
+            "descProduto": "cd da cantora Ariana Grande",
+            "precoProduto": 66.50,
+            "imgProduto": {
+                "url": "https://m.media-amazon.com/images/I/81l-vS-TuxL._AC_SL1500_.jpg"
+            },
+            "tipoProduto": "cd"
+        },
+
+        {
+            "idProduto": 6,
+            "nomeProduto": "CD Gorillaz - The Now Now",
+            "descProduto": "cd da banda Gorillaz",
+            "precoProduto": 66.50,
+            "imgProduto": {
+                "url": "https://upload.wikimedia.org/wikipedia/pt/f/fa/The_Now_Now.jpg"
+            },
+            "tipoProduto": "cd"
+        }
+    ],
+
+    "produtosVinil": [
+        {
+            "idProduto": 2,
+            "nomeProduto": "CD Lil Nas X - Montero",
+            "descProduto": "cd do cantor Lil Nas X",
+            "precoProduto": 40.89,
+            "imgProduto": {
+                "url": "https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/09/fdcd5a_240a6e0fd7c041a798c9a36998e1416dmv2-1.jpg?fit=693%2C689&ssl=1"
+            },
+            "tipoProduto": "vinil"
+        },
+
+        {
+            "idProduto": 5,
+            "nomeProduto": "CD Mitski - Laurel Hell",
+            "descProduto": "cd da cantora Mitski",
+            "precoProduto": 50.69,
+            "imgProduto": {
+                "url": "https://imusic.b-cdn.net/images/item/original/029/0656605155029.jpg?mitski-2022-laurel-hell-cd&class=scaled"
+            },
+            "tipoProduto": "cd"
+        },
+
+        {
+            "idProduto": 7,
+            "nomeProduto": "CD Billie Eilish - Happier Than Ever",
+            "descProduto": "cd da cantora Billie Eilish",
+            "precoProduto": 50.69,
+            "imgProduto": {
+                "url": "https://m.media-amazon.com/images/I/71laVfWEkCS._AC_SL1400_.jpg"
+            },
+            "tipoProduto": "vinil"
+        }
+      ]
+}

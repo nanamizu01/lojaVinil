@@ -1,0 +1,29 @@
+<div class="container-perfil">
+    <h4 class="titulo titulo_perfil">Minha Conta</h4>
+
+    <div>
+        <p>NOME COMPLETO: nome sobrenome da silva sauro</p>
+        <p>DATA DE NASCIMENTO: dd/MM/yyyy</p>
+        <p>EMAIL: usuario@email.com</p>
+        <p>SENHA: *********</p>
+    </div>
+    <HR>
+    <div class="att_senha">
+
+        <h5 class="titulo titulo_att_senha">Atualizar senha:</h5>
+
+        <form [formGroup]="form_att_senha" (ngSubmit)="onSubmit()">
+
+            <div class="form-group">
+
+                <input type="password" class="form-control" placeholder="Senha atual" 
+                    formControlName="senha_atual" [ngClass]="aplicaCssErro('senha_atual')">
+                <input type="password" class="form-control" placeholder="Nova senha"
+                    formControlName="senha_nova" [ngClass]="aplicaCssErro('senha_nova')">
+                <button id="btn_atualizar" type="submit" class="btn btn-primary" [disabled]="!form_att_senha.valid">Atualizar</button>
+            </div>
+            
+        </form>
+    </div>
+</div>
+
